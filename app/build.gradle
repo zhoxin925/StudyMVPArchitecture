@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+//8.8.1版本时，不注释会出错；9.0.0时不注释有警告
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion       rootProject.ext.android["compileSdkVersion"]
+    defaultConfig {
+        applicationId "com.example.temp123.studymvparchitecture"
+        minSdkVersion       rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion    rootProject.ext.android["targetSdkVersion"]
+        versionCode         rootProject.ext.android["versionCode"]
+        versionName         rootProject.ext.android["versionName"]
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Butterknife requires Java 8.
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    //base
+    implementation  rootProject.ext.dependencies["appcompat-v7"]
+    implementation  rootProject.ext.dependencies["constraint-layout"]
+
+    //butterknife
+    implementation      rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}
+
+//
+////解决支持库版本不兼容问题
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support') {
+//            if (!requested.name.startsWith("multidex")) {
+//                details.useVersion '26.1.0'
+//            }
+//        }
+//    }
+//}
+//repositories {
+//    mavenCentral()
+//}
