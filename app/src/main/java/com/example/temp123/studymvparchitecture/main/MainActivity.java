@@ -1,5 +1,6 @@
 package com.example.temp123.studymvparchitecture.main;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
@@ -32,7 +33,8 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainCon
     void onClick(View view) {
         switch (view.getId()) {
             case R.id.button:
-                myPresenter.getMsg();
+                startActivity(new Intent(mActivity, TestActivity.class));
+                //myPresenter.getMsg();
                 break;
 
             case R.id.textview:
