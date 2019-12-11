@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navi_item_notice"
+            android:title="@string/navi_item_title_string_notice"
+            android:contentDescription="@string/navi_item_content_string_notice"/>
+        <item
+            android:id="@+id/navi_item_parking_record"
+            android:title="@string/navi_item_title_string_parking_record"
+            android:contentDescription="@string/navi_item_content_string_parking_record"/>
+        <item
+            android:id="@+id/navi_item_traffic_flow_analysis"
+            android:title="@string/navi_item_title_string_traffic_flow_analysis"
+            android:contentDescription="@string/navi_item_content_string_traffic_flow_analysis"/>
+        <item
+            android:id="@+id/navi_item_failure_report"
+            android:title="@string/navi_item_title_string_failure_report"
+            android:contentDescription="@string/navi_item_content_string_failure_report"/>
+        <item
+            android:id="@+id/navi_item_operation_log"
+            android:title="@string/navi_item_title_string_operation_log"
+            android:contentDescription="@string/navi_item_content_string_operation_log"/>
+        <item
+            android:id="@+id/navi_item_total_parking_revenue"
+            android:title="@string/navi_item_title_string_total_parking_revenue"
+            android:contentDescription="@string/navi_item_content_string_total_parking_revenue"/>
+        <item
+            android:id="@+id/navi_item_clear_or_supplement_currency_record"
+            android:title="@string/navi_item_title_string_clear_or_supplement_currency_record"
+            android:contentDescription="@string/navi_item_content_string_clear_or_supplement_currency_record"/>
+        <item
+            android:id="@+id/navi_item_settlement_record_of_toll_collector"
+            android:title="@string/navi_item_title_string_settlement_record_of_toll_collector"
+            android:contentDescription="@string/navi_item_content_string_settlement_record_of_toll_collector"/>
+        <item
+            android:id="@+id/navi_item_detection_update"
+            android:title="@string/navi_item_title_string_detection_update"
+            android:contentDescription="@string/navi_item_content_string_detection_update"/>
+    </group>
+
+</menu>

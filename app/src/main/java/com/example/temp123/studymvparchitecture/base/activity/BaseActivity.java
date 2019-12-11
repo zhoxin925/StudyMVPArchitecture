@@ -32,7 +32,7 @@ public abstract class BaseActivity<T extends IBasePresenter> extends AbstractSim
     protected abstract T createPresenter();
 
     @Override
-    protected void onViewInit() {
+    protected void onViewCreated() {
         myPresenter = createPresenter();
         if(myPresenter != null) {
             myPresenter.attachView(this);

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">StudyMVPArchitecture</string>
+
+    <string name="navi_head_title">客户测试</string>
+    <string name="navi_head_administrators">管理员</string>
+    <string name="navi_head_clear_supplement_currency">清币/补币</string>
+    <string name="navi_head_checkout_information">结账信息</string>
+
+    <string name="navi_item_title_string_notice">通知</string>
+    <string name="navi_item_title_string_parking_record">停放记录</string>
+    <string name="navi_item_title_string_traffic_flow_analysis">车流分析</string>
+    <string name="navi_item_title_string_failure_report">故障报表</string>
+    <string name="navi_item_title_string_operation_log">操作日志</string>
+    <string name="navi_item_title_string_total_parking_revenue">停车场总收入</string>
+    <string name="navi_item_title_string_clear_or_supplement_currency_record">清币/补币记录</string>
+    <string name="navi_item_title_string_settlement_record_of_toll_collector">收费人员结账记录</string>
+    <string name="navi_item_title_string_detection_update">检测更新</string>
+
+    <string name="navi_item_content_string_notice">通知信息和警告信息记录</string>
+    <string name="navi_item_content_string_parking_record">现场停放以及历史停放记录</string>
+    <string name="navi_item_content_string_traffic_flow_analysis">车流量分析表，时间段、日期、周、月</string>
+    <string name="navi_item_content_string_failure_report">分为: 车位锁故障、PM8故障</string>
+    <string name="navi_item_content_string_operation_log">手动收费日志，操作设备日志</string>
+    <string name="navi_item_content_string_total_parking_revenue">日期段查看所有停车场详细收入</string>
+    <string name="navi_item_content_string_clear_or_supplement_currency_record">查看财务清补币记录</string>
+    <string name="navi_item_content_string_settlement_record_of_toll_collector">根据停车场、日期段查询结账记录</string>
+    <string name="navi_item_content_string_detection_update">当前版本为...检测是否有新版本</string>
 </resources>

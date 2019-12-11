@@ -27,7 +27,7 @@ public abstract class AbstractSimpleActivity extends AppCompatActivity {
         ActivityCollector.getInstance().addActivity(mActivity);
         unbinder = ButterKnife.bind(this);
 
-        onViewInit();
+        onViewCreated();
         initEventAndData();
     }
 
@@ -43,7 +43,7 @@ public abstract class AbstractSimpleActivity extends AppCompatActivity {
 
     protected abstract int getLayoutId();
 
-    protected abstract void onViewInit();
+    protected abstract void onViewCreated();
 
     protected abstract void initEventAndData();
 
